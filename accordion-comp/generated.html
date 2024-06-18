@@ -1,0 +1,83 @@
+<body data-new-gr-c-s-check-loaded="14.1029.0" data-gr-ext-installed="">
+    <div class="component">
+      <h1>Frog Life Cycle</h1>
+      <div class="accordion" id="accordion">
+      <div class="accordion-item"><button class="accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-0" aria-controls="collapse-0" aria-expanded="false">Step 1: Eggs</button><div class="accordion-collapse collapse" id="collapse-0" aria-labelledby="heading-0" data-bs-parent="#accordion"><div class="accordion-body"><p>Frogs begin life as fertilized eggs. Female frogs lay thousands of eggs at one time in a pond. The eggs float on water in a jelly mass or cluster. Soon, the eggs will hatch into tadpoles!</p><img src="assets/images/Frog Lifecycle Step 1.jpg" alt="frog eggs in various stages of development, starting with an olive-colored ball and ending with a visible tail"></div></div></div><div class="accordion-item"><button class="accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-controls="collapse-1" aria-expanded="false">Step 2: Tadpoles</button><div class="accordion-collapse collapse" id="collapse-1" aria-labelledby="heading-1" data-bs-parent="#accordion"><div class="accordion-body"><p>When a tadpole hatches, it looks more like a fish than a frog. A tadpole doesn’t have any legs. It has gills that allow it to breathe underwater. A tadpole swims, eats and grows for several weeks. Nutrients are stored in the tadpole's tail, as hind legs begin to grow.</p><img src="assets/images/Frog Lifecycle Step 2.jpg" alt="tadpoles in various stages of development, ending with an organism with a small frog head with eyes and newly-formed back legs"></div></div></div><div class="accordion-item"><button class="accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-controls="collapse-2" aria-expanded="false">Step 3: Froglet</button><div class="accordion-collapse collapse" id="collapse-2" aria-labelledby="heading-2" data-bs-parent="#accordion"><div class="accordion-body"><p>As a tadpole grows two front legs, its long tail becomes shorter. The tadpole uses stored nutrients as food, so until its tail is completely gone, it doesn’t need anything else to eat! When just a little stub of its tail is left, the tadpole has now become a young frog. It can hop right out of the water and onto dry land for the first time.</p><img src="assets/images/Frog Lifecycle Step 3.jpg" alt="3 phases of the froglet's development"></div></div></div><div class="accordion-item"><button class="accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-controls="collapse-3" aria-expanded="false">Step 4: Adult Frog</button><div class="accordion-collapse collapse" id="collapse-3" aria-labelledby="heading-3" data-bs-parent="#accordion"><div class="accordion-body"><p>The frog’s tail eventually disappears and the frog will begin eating insects instead of plants from the water. A young frog continues to grow for about 2-4 years until it becomes an adult. Adult frogs then lay their own eggs and more tadpoles hatch and begin the cycle again!</p><img src="assets/images/Frog Lifecycle Step 4.jpg" alt="two adult frogs: the left frog is younger and smaller, the right frog is a full-grown adult"></div></div></div></div>
+    </div>
+    <script src="assets/scripts/main.js"></script>  
+  <!-- Code injected by live-server -->
+  <script>
+      // <![CDATA[  <-- For SVG support
+      if ('WebSocket' in window) {
+          (function () {
+              function refreshCSS() {
+                  var sheets = [].slice.call(document.getElementsByTagName("link"));
+                  var head = document.getElementsByTagName("head")[0];
+                  for (var i = 0; i < sheets.length; ++i) {
+                      var elem = sheets[i];
+                      var parent = elem.parentElement || head;
+                      parent.removeChild(elem);
+                      var rel = elem.rel;
+                      if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                          var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                          elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                      }
+                      parent.appendChild(elem);
+                  }
+              }
+              var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+              var address = protocol + window.location.host + window.location.pathname + '/ws';
+              var socket = new WebSocket(address);
+              socket.onmessage = function (msg) {
+                  if (msg.data == 'reload') window.location.reload();
+                  else if (msg.data == 'refreshcss') refreshCSS();
+              };
+              if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                  console.log('Live reload enabled.');
+                  sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+              }
+          })();
+      }
+      else {
+          console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+      }
+      // ]]>
+  </script>
+  
+  
+  
+  <div class="component">
+      <h2>Simple JavaScript Accordions</h2>
+      <section id="accordions" class="accordion-set">
+        <div class="accordion">
+          <a class="toggle" href="" aria-label="Sample toggle item #1">Sample toggle item #1</a>
+          <div class="toggle-contents">
+            <p>These are the contents of toggle item 1.</p>
+          </div>
+        </div>
+        <div class="accordion">
+          <a class="toggle" href="" aria-label="Sample toggle item #2">Sample toggle item #2</a>
+          <div class="toggle-contents">
+            <p>These are the contents of toggle item 2.</p>
+          </div>
+        </div>
+        <div class="accordion">
+          <a class="toggle" href="" aria-label="Sample toggle item #3">Sample toggle item #3</a>
+          <div class="toggle-contents">
+            <p>These are the contents of toggle item 3.</p>
+          </div>
+        </div>
+        <div class="accordion">
+          <a class="toggle" href="" aria-label="Sample toggle item #4">Sample toggle item #4</a>
+          <div class="toggle-contents">
+            <p>These are the contents of toggle item 4.</p>
+          </div>
+        </div>
+        <div class="accordion">
+          <a class="toggle" href="" aria-label="Sample toggle item #5">Sample toggle item #5</a>
+          <div class="toggle-contents">
+            <p>These are the contents of toggle item 5.</p>
+          </div>
+        </div>
+      </section>
+    </div></body>

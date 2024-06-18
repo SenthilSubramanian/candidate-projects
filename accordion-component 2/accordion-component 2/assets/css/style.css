@@ -1,0 +1,96 @@
+
+.accordion{
+    width: 70%;
+    margin: auto;
+}
+
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    transition: all 2.0s;
+}
+
+.panelValue,panelImage {
+    float: left;
+    width: 50%;
+    
+    padding: 20px;
+  }
+
+@media screen and (max-width: 320px) {
+    .panelValue,panelImage {
+      width: 100%;
+      /* height: 200px; */
+    }
+    
+    img{
+        width: 200px;
+    }
+
+}
+
+.title {
+    cursor: pointer;
+    position:relative;
+    font-size: 20px;
+    padding: 13px;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: solid 1px rgb(225, 237, 245);
+}
+
+.title:hover {
+    opacity: 0.7;
+    border: 0px;
+    background-color: rgb(225, 237, 245);
+}
+
+.panel{
+    width: 100%;
+    overflow: hidden;
+    max-height: 0;
+    padding-left: 13px;
+    transition: all 2.0s;
+    font-size: 18px;
+    
+} 
+
+.title.active + .panel{
+    max-height: fit-content;
+    
+}
+.inner {
+    margin: 16px;
+}
+
+.title.titleWithLock::after{
+    content: url('../images/lock.svg');;
+}
+
+.title::after {
+    
+    content: "\2304";
+    position: absolute;
+    font-size: 24px;
+    font-family: 'Material Icons';
+    right: 5px;
+    top: 10px;
+    -webkit-transition: all 0.5s;
+    transition: all 1.0s;
+}
+
+.title.active::after {
+    transform: rotate(180deg);
+}
+
+
+button{
+    text-align: left;
+    border: 0px;
+    background-color: white;
+}
